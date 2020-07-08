@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1131a129-7643-48a4-ab08-598232e7989e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TimeLengthGetter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/TimeLengthSourceData.txt" afterDir="false" />
+    <list default="true" id="1131a129-7643-48a4-ab08-598232e7989e" name="Default Changelist" comment="添加：./.idea下文件">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +26,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -90,15 +90,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594125277702</updated>
-      <workItem from="1594125336616" duration="4955000" />
+      <workItem from="1594125336616" duration="5666000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化：仓库；添加：TimeLengthGetter；">
+      <created>1594174778915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594174778916</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加：./.idea下文件">
+      <created>1594174859364</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594174859364</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="初始化：仓库；添加：TimeLengthGetter；" />
+    <MESSAGE value="添加：./.idea下文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加：./.idea下文件" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1493" height="291" key="GridCell.Tab.0.bottom" timestamp="1594129010897">
@@ -137,10 +154,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="270" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1594125507078" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1594174730990">
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1594174867618">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1594174730990" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1594174867618" />
     <state x="570" y="338" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1594174718023">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
