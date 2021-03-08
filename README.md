@@ -17,3 +17,8 @@
 
 1. 今天发现使用`Neat Download Manager`下载东西如果不正常结束会产生大量无用缓存
 2. 遂编写了一个脚本用于清理这些无用缓存
+
+```bash
+nuitka编译代码
+nuitka --follow-imports --standalone --recurse-all --show-progress --show-scons --output-dir=./release --windows-icon=./NeatDMErrorCacheDeleteIcon.ico NeatDMErrorCacheDelete.py
+```
