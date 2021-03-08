@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1131a129-7643-48a4-ab08-598232e7989e" name="Default Changelist" comment="添加：./.idea下文件">
-      <change afterPath="$PROJECT_DIR$/NeatDMErrorCacheDelete.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeatDMErrorCacheDelete.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeatDMErrorCacheDelete.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <recent name="D:\My files\Python相关\PycharmProjects\TestUsing\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.DatetimeNowMethodAndDefaultParameterTest">
+  <component name="RunManager" selected="Python.NeatDMErrorCacheDelete">
     <configuration name="DatetimeNowMethodAndDefaultParameterTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TestUsing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,6 +85,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DatetimeNowMethodAndDefaultParameterTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="NeatDMErrorCacheDelete" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TestUsing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NeatDMErrorCacheDelete.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,6 +139,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.NeatDMErrorCacheDelete" />
         <item itemvalue="Python.DatetimeNowMethodAndDefaultParameterTest" />
         <item itemvalue="Python.TimeLengthGetter" />
       </list>
@@ -136,7 +158,9 @@
       <workItem from="1594125336616" duration="5666000" />
       <workItem from="1594829801161" duration="745000" />
       <workItem from="1595745894237" duration="545000" />
-      <workItem from="1595751368438" duration="234000" />
+      <workItem from="1595751368438" duration="332000" />
+      <workItem from="1595945159189" duration="10000" />
+      <workItem from="1614931699648" duration="814000" />
     </task>
     <task id="LOCAL-00001" summary="初始化：仓库；添加：TimeLengthGetter；">
       <created>1594174778915</created>
@@ -159,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594830511454</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="文件自动更新">
+      <created>1595751660316</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595751660316</updated>
+    </task>
+    <task id="LOCAL-00005" summary="添加：NeatDM异常缓存清理脚本">
+      <created>1595751685687</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595751685687</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,56 +219,31 @@
     <MESSAGE value="初始化：仓库；添加：TimeLengthGetter；" />
     <MESSAGE value="添加：./.idea下文件" />
     <MESSAGE value="添加：DatetimeNowMethodAndDefaultParameterTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加：DatetimeNowMethodAndDefaultParameterTest" />
+    <MESSAGE value="文件自动更新" />
+    <MESSAGE value="添加：NeatDM异常缓存清理脚本" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加：NeatDM异常缓存清理脚本" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="231" key="GridCell.Tab.0.bottom" timestamp="1595746439061">
+    <state width="1493" height="231" key="GridCell.Tab.0.bottom" timestamp="1614932515909">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="231" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595746439061" />
-    <state width="1493" height="231" key="GridCell.Tab.0.center" timestamp="1595746439061">
+    <state width="1493" height="231" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1614932515909" />
+    <state width="1493" height="231" key="GridCell.Tab.0.center" timestamp="1614932515909">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="231" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1595746439061" />
-    <state width="1493" height="231" key="GridCell.Tab.0.left" timestamp="1595746439061">
+    <state width="1493" height="231" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1614932515909" />
+    <state width="1493" height="231" key="GridCell.Tab.0.left" timestamp="1614932515909">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="231" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1595746439061" />
-    <state width="1493" height="231" key="GridCell.Tab.0.right" timestamp="1595746439061">
+    <state width="1493" height="231" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1614932515909" />
+    <state width="1493" height="231" key="GridCell.Tab.0.right" timestamp="1614932515909">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="231" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1595746439061" />
-    <state width="1493" height="469" key="GridCell.Tab.1.bottom" timestamp="1594830550136">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="469" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1594830550136" />
-    <state width="1493" height="469" key="GridCell.Tab.1.center" timestamp="1594830550136">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="469" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1594830550136" />
-    <state width="1493" height="469" key="GridCell.Tab.1.left" timestamp="1594830550136">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="469" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1594830550136" />
-    <state width="1493" height="469" key="GridCell.Tab.1.right" timestamp="1594830550136">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="469" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1594830550136" />
-    <state x="270" y="76" key="SettingsEditor" timestamp="1594125507078">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="270" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1594125507078" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1594830516142">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1594830516142" />
-    <state x="570" y="338" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1594174718023">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="570" y="338" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.864@0.0.1536.864" timestamp="1594174718023" />
+    <state width="1493" height="231" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1614932515909" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TestUsing$DatetimeNowMethodAndDefaultParameterTest.coverage" NAME="DatetimeNowMethodAndDefaultParameterTest Coverage Results" MODIFIED="1595746183921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TestUsing$NeatDMErrorCacheDelete.coverage" NAME="NeatDMErrorCacheDelete Coverage Results" MODIFIED="1614932486729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TestUsing$TimeLengthGet.coverage" NAME="TimeLengthGet Coverage Results" MODIFIED="1594128963144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
