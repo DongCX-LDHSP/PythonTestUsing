@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1131a129-7643-48a4-ab08-598232e7989e" name="Default Changelist" comment="添加：./.idea下文件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeatDMErrorCacheDelete.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeatDMErrorCacheDelete.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,6 +66,9 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My files\Python相关\PycharmProjects\TestUsing\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\My files\Python相关\PycharmProjects\TestUsing\resources" />
     </key>
@@ -161,6 +164,7 @@
       <workItem from="1595751368438" duration="332000" />
       <workItem from="1595945159189" duration="10000" />
       <workItem from="1614931699648" duration="814000" />
+      <workItem from="1615171239274" duration="481000" />
     </task>
     <task id="LOCAL-00001" summary="初始化：仓库；添加：TimeLengthGetter；">
       <created>1594174778915</created>
@@ -197,7 +201,35 @@
       <option name="project" value="LOCAL" />
       <updated>1595751685687</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加：计算删除的缓存文件总大小的功能">
+      <created>1615171533099</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615171533099</updated>
+    </task>
+    <task id="LOCAL-00007" summary="添加：应用程序图标">
+      <created>1615171549046</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615171549046</updated>
+    </task>
+    <task id="LOCAL-00008" summary="添加：NeatDMErrorCacheDelete使用nuitka编译的指令">
+      <created>1615171587467</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615171587467</updated>
+    </task>
+    <task id="LOCAL-00009" summary="更新：.idea/下文件的自动变化">
+      <created>1615171652585</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615171652585</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,9 +253,17 @@
     <MESSAGE value="添加：DatetimeNowMethodAndDefaultParameterTest" />
     <MESSAGE value="文件自动更新" />
     <MESSAGE value="添加：NeatDM异常缓存清理脚本" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加：NeatDM异常缓存清理脚本" />
+    <MESSAGE value="添加：计算删除的缓存文件总大小的功能" />
+    <MESSAGE value="添加：应用程序图标" />
+    <MESSAGE value="添加：NeatDMErrorCacheDelete使用nuitka编译的指令" />
+    <MESSAGE value="更新：.idea/下文件的自动变化" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新：.idea/下文件的自动变化" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="93" y="93" width="1350" height="678" maximized="true" key="DiffContextDialog" timestamp="1615171719175">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="93" y="93" width="1350" height="678" maximized="true" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1615171719175" />
     <state width="1493" height="231" key="GridCell.Tab.0.bottom" timestamp="1614932515909">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -240,6 +280,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="231" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1614932515909" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1615171664043">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1615171664043" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TestUsing$DatetimeNowMethodAndDefaultParameterTest.coverage" NAME="DatetimeNowMethodAndDefaultParameterTest Coverage Results" MODIFIED="1595746183921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
