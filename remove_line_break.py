@@ -7,6 +7,8 @@ from enum import Enum
 import pyperclip
 from nltk.corpus import wordnet
 
+from single_instance import SingleInstance
+
 
 class PlatformType(Enum):
     windows = 'Windows'
@@ -38,6 +40,35 @@ class ConstValue:
 ProcessMethodType = Callable[[str], str]
 
 
+class ProcessFunc(SingleInstance):
+    """注册并管理处理函数"""
+
+    # 处理函数列表
+    __process_functions: List[ProcessMethodType] = []
+
+    @staticmethod
+    def register(func: ProcessMethodType) -> Callable:
+        """将一个函数添加到处理函数列表中，并对该函数作一层包装，强制进行参数类型检查"""
+
+        # 将该函数添加到 处理函数 列表中
+        ProcessFunc.__process_functions.append(func)
+
+        # 对处理函数进行装饰
+        def wrapper(string):
+            """对函数进行装饰，在调用函数前检查函数的输入参数是否是字符串类型，不是则打印异常日志"""
+            if isinstance(string, str) is False:
+                logging.error('不支持的参数类型')
+                return ''
+            else:
+                return func(string)
+
+        return wrapper
+
+    @staticmethod
+    def functions() -> List[ProcessMethodType]:
+        return ProcessFunc.__process_functions.copy()
+
+
 def make_choice(menu: List[str], choice_range: List[int]) -> int:
     """让用户做出选择，并作合法性检查"""
     print("\n\nMAKE YOUR CHOICE")
@@ -52,13 +83,14 @@ def make_choice(menu: List[str], choice_range: List[int]) -> int:
         print('！非法选择，请重新选择！')
 
 
-def select_process_method(methods: List[ProcessMethodType]) -> ProcessMethodType:
+def select_process_method() -> ProcessMethodType:
     """
     基于传入的处理函数列表，让用户切换不同的处理功能
     TODO 考虑是否支持用户一次选择多种处理函数
     """
-    count: int = len(methods)
-    methods_info: dict = {i: (method.__name__, method.__doc__, method) for i, method in enumerate(methods)}
+    functions: List[ProcessMethodType] = ProcessFunc.functions()
+    count: int = len(functions)
+    methods_info: dict = {i: (method.__name__, method.__doc__, method) for i, method in enumerate(functions)}
     methods_info[count] = ('结束程序', '结束程序', None)
 
     # 让用户选择功能
@@ -67,9 +99,9 @@ def select_process_method(methods: List[ProcessMethodType]) -> ProcessMethodType
         return methods_info[make_choice(menu, list(methods_info.keys()))][2]
 
 
-def listen_clipboard(methods: List[ProcessMethodType]) -> None:
+def listen_clipboard() -> None:
     # 首先让用户选择功能
-    process: ProcessMethodType = select_process_method(methods)
+    process: ProcessMethodType = select_process_method()
     if process is None:
         return
 
@@ -107,7 +139,7 @@ def listen_clipboard(methods: List[ProcessMethodType]) -> None:
             pyperclip.copy(processed)
             print(f'\n\n第 {dealt_count} 次命中: \n{processed}\n')
         except KeyboardInterrupt:
-            process = select_process_method(methods)
+            process = select_process_method()
             if process is None:
                 print(f'\n统计结果：\n'
                       f'轮询次数：{wait_count}\n'
@@ -120,6 +152,7 @@ def listen_clipboard(methods: List[ProcessMethodType]) -> None:
             print('处理失败')
 
 
+@ProcessFunc.register
 def remove_space(string: str) -> str:
     """无脑删除文本中的所有：空格、制表符、换行符、回车符"""
     spaces: str = ' \t\n\r'
@@ -128,21 +161,25 @@ def remove_space(string: str) -> str:
     return string
 
 
+@ProcessFunc.register
 def remove_line_break(string: str) -> str:
     """无脑删除文本中的所有换行，会基于平台的不同，自动选择换行符"""
     return string.replace(ConstValue.line_break, '')
 
 
+@ProcessFunc.register
 def remove_space_and_line_break(string: str) -> str:
     """无脑删除文本中的所有换行以及空白字符，是 remove_line_break 和 remove_space 的合并调用"""
     return remove_space(remove_line_break(string))
 
 
+@ProcessFunc.register
 def strip(string: str) -> str:
     """对该字符串调用 strip 函数，去除首尾的空白符"""
     return string.strip()
 
 
+@ProcessFunc.register
 def remove_blank_line(string: str) -> str:
     """删除文本中的所有空行"""
     result: List[str] = []
@@ -153,6 +190,7 @@ def remove_blank_line(string: str) -> str:
     return ConstValue.line_break.join(result)
 
 
+@ProcessFunc.register
 def remove_line_break_english(string: str) -> str:
     """基于行尾和行首的字符能否构成单词来移除换行符"""
     # 使用换行符将输入字符串拆分为多行字符串
@@ -182,13 +220,4 @@ def remove_line_break_english(string: str) -> str:
 
 
 if __name__ == '__main__':
-    process_methods: List[ProcessMethodType] = [
-        remove_space,
-        remove_line_break,
-        remove_space_and_line_break,
-        strip,
-        remove_line_break_english,
-        remove_blank_line,
-    ]
-
-    listen_clipboard(process_methods)
+    listen_clipboard()
