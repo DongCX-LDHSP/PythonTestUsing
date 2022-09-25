@@ -1,9 +1,38 @@
 import time
 import logging
+import platform
 from typing import Callable, List
+from enum import Enum
 
 import pyperclip
 from nltk.corpus import wordnet
+
+
+class PlatformType(Enum):
+    windows = 'Windows'
+    linux = 'Linux'
+    mac = 'Mac'
+    unknown = 'Unknown'
+
+
+class Platform:
+    @staticmethod
+    def name() -> PlatformType:
+        try:
+            return PlatformType(platform.system())
+        except Exception as e:
+            logging.exception(e)
+            return PlatformType.unknown
+
+
+class ConstValue:
+    __line_break_map: dict = {
+        PlatformType.windows: '\r\n',
+        PlatformType.linux: '\n',
+        PlatformType.mac: '\r',
+        PlatformType.unknown: '\r\n',
+    }
+    line_break: str = __line_break_map[Platform.name()]
 
 
 ProcessMethodType = Callable[[str], str]
@@ -100,8 +129,8 @@ def remove_space(string: str) -> str:
 
 
 def remove_line_break(string: str) -> str:
-    """无脑删除文本中的所有换行，'\\r\\n'形式 或 '\\n\\r'形式"""
-    return string.replace('\r\n', '').replace('\n\r', '')
+    """无脑删除文本中的所有换行，会基于平台的不同，自动选择换行符"""
+    return string.replace(ConstValue.line_break, '')
 
 
 def remove_space_and_line_break(string: str) -> str:
@@ -114,10 +143,20 @@ def strip(string: str) -> str:
     return string.strip()
 
 
+def remove_blank_line(string: str) -> str:
+    """删除文本中的所有空行"""
+    result: List[str] = []
+    for line in string.split(ConstValue.line_break):
+        if line == '':
+            continue
+        result.append(line)
+    return ConstValue.line_break.join(result)
+
+
 def remove_line_break_english(string: str) -> str:
     """基于行尾和行首的字符能否构成单词来移除换行符"""
     # 使用换行符将输入字符串拆分为多行字符串
-    original_lines: List[str] = [line.strip() for line in string.split('\n')]
+    original_lines: List[str] = [line.strip() for line in string.split(ConstValue.line_break)]
 
     # TODO: 逻辑错误，需要进行修改
     # 移除行尾的连字符 '-'，并将该行与下一行进行拼接
@@ -149,6 +188,7 @@ if __name__ == '__main__':
         remove_space_and_line_break,
         strip,
         remove_line_break_english,
+        remove_blank_line,
     ]
 
     listen_clipboard(process_methods)
